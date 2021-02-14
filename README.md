@@ -2,6 +2,25 @@
 ###### Estudos feitos no curso [Git e Github Essencial para o Desenvolvedor](https://www.udemy.com/course/curso-de-git-e-github-essencial/)
 > Se tiver algo errado aqui, abra uma issue que vou corrigir :wink:
 
+<details><summary><strong>Sincronizando repo local com o remoto</strong></summary>
+
+- Crie o repositório no próprio Github, é bem fácil. Depois na sua máquina, entre na sua pasta de repositórios. No terminal digite:  
+  **`git clone UrlDoRepo`**  
+  **`cd Repo`**  
+  **`git config user.name ""`**  
+  **`git config user.email ""`**  
+  **`touch <algum arquivo>`**  
+  **`git add <o arquivo criado>`**  
+  **`git commit -m ""`**  
+  **`git push -u origin main`**  
+
+  - Então vai pedir username e senha ou **token** se você tem 2FA
+  **`git config credential.helper store`** pra guardar as credenciais, senão vai ter que colocar login e senha em todo push. **Só faça isso se estiver em máquina local**.
+  **`git remote -v`** pra ver se deu certo.
+- Sempre que mudar algo como username ou nome do repo, entre na pasta .git e faça as alterações no arquivo config, de cada repo.
+
+</details>
+
 <details><summary>Ciclo de vida dos arquivos</summary>
 
 - **Untracked:** estados em que todos arquivos iniciam. Quando não está rastreado, sincronizado no repo local, no Git.
@@ -177,24 +196,5 @@ Pequenos trechos de códigos que você cria pra você mesmo ou outras pessoas. S
 Para usar facilmente com frequência.
 
 Permite o compartilhamento de pequenos trechos de código. Há também quem use o Gist para receber feedbacks daquele código específico. Também pode publicar parte do seu código e usar o plugin do Gist para mostrar seu código em sites, fóruns e outros locais. Para isso, só precisa publicar o código (depois de logar no GitHub) e clicar em “Show Embed” e ele lhe mostrará um código javascript para colar onde quiser. Onde você colar o javascript vai aparecer uma caixinha bonitinha com o trecho de código e um link para o seu Gist. Alterando seu Gist, todos os lugares onde você publicou seu código serão alterados ao mesmo tempo.
-
-</details>
-
-<details><summary>Sincronizando repo local com o remoto</summary>
-
-- Crie o repositório no próprio Github, é bem fácil. Depois na sua máquina, entre nas sua pasta de repositórios. No terminal digite:  
-  **`git clone UrlDoRepo`**  
-  **`cd Repo`**  
-  **`git config user.name ""`**  
-  **`git config user.email ""`**  
-  **`touch <algum arquivo>`**  
-  **`git add <o arquivo criado>`**  
-  **`git commit -m ""`**  
-  **`git push -u origin main`**  
-
-  - Então vai pedir username e senha ou **token** se você tem 2FA
-  **`git config credential.helper store`** pra guardar as credenciais, senão vai ter que colocar login e senha em todo push. **Só faça isso se estiver em máquina local**.
-  **`git remote -v`** pra ver se deu certo.
-- Sempre que mudar algo como username ou nome do repo, entre na pasta .git e faça as alterações no arquivo config, de cada repo.
 
 </details>
