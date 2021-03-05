@@ -55,7 +55,7 @@
 
 - **`git add .`** --> diz pro git tanto pra adicionar arquivos novos pro monitoramento, quanto pra monitorar os modificados.
 
-- **`git mv arquivo1.extensao arquivo2.extensao`** --> renomeia arquivos
+- **`git mv arquivo1.extensao arquivo2.extensao`** --> renomeia arquivos. Serve pra diretórios também. Certifique-se de estar no dir correto, e usar **`git mv ./pasta1/ ./pasta2/`**
   > Por que fazer isso pelo git e não pelo terminal normal? Porque quando você faz isso, na verdade o arquivo anterior é apagado, e é criado um nome arquivo, com mesmo conteúdo mas nome diferente. Você tem que adicionar novamente o arquivo, com o novo nome, ao rastreio do Git, e também tem que adicionar o arquivo deletado (??wtf??) com o nome antigo.
 
   > Renomeando pelo próprio git, o arquivo só muda o nome mesmo, continua rastreado, pronto pro commit. Muito menos dor de cabeça.
